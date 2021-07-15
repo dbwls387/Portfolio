@@ -101,7 +101,7 @@ p {
   justify-content: space-between;
   background-color: var(--color-sky);
   align-items: center;
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
   padding: 16px;
 }
 
@@ -146,11 +146,11 @@ p {
 
 .home__title,
 .home__description {
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
 }
 
 .home__contact {
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -198,12 +198,14 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 
-.major__title,
-.major__description {
+.major__title {
   color: var(--color-dark-grey);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
 }
 
 .major__description {
+  color: var(--color-grey);
   font-size: var(--font-small);
 }
 
