@@ -5,13 +5,14 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #d3d3d3;
   --color-sky: #d4e3ff;
-  --color-dark-sky: #b7d0ff;
+  --color-dark-sky: #a2b1cc;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #5a5a5a;
   --color-grey: #6b6e70;
   --color-light-grey: #999999;
   --color-blue: #548eb4;
   --color-yellow: #fff7d1;
+  --color-purple: #d4d6e4;
   --color-orange: #feb546;
   --color-black: #000000;
 
@@ -144,9 +145,13 @@ p {
   border: 3px solid var(--color-light-white);
 }
 
-.home__title,
+.home__title {
+  color: var(--color-dark-grey);
+}
+
 .home__description {
   color: var(--color-dark-grey);
+  font-size: var(--font-small);
 }
 
 .home__contact {
@@ -157,6 +162,11 @@ p {
   padding: 8px 12px;
   border: 2px solid #4b545c;
   border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover {
+  background-color: var(--color-dark-sky);
+  transition: background 0.5s ease-in-out;
 }
 
 /* Section common */
@@ -229,7 +239,7 @@ p {
 
 /* Skill */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-light-white);
 }
 
 .skillset {
