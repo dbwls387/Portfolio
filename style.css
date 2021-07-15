@@ -3,13 +3,14 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
+  --color-dark-white: #d3d3d3;
   --color-sky: #d4e3ff;
+  --color-dark-sky: #b7d0ff;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #999999;
-  --color-blue: #73aace;
+  --color-blue: #548eb4;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -28,6 +29,9 @@
 
   /* Size */
   --size-border-radius: 5px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -123,7 +127,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-white);
+  background-color: var(--color-dark-sky);
 }
 
 /* Home */
@@ -153,4 +157,66 @@ p {
   padding: 8px 12px;
   border: 2px solid white;
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+.major__icon:hover i {
+  color: var(--color-dark-grey);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.school {
+  display: flex;
+  align-items: center;
+}
+
+.school__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.school__name {
+  color: var(--color-light-grey);
+}
+
+.school__name {
+  font-size: var(--font-small);
 }
