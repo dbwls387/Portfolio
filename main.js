@@ -33,6 +33,14 @@ homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
+// 스크롤을 내릴수록 home 화면이 조금씩 투명해지게 만들기 
+const home = document.querySelector('.home__container'); 
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+  
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector); 
   scrollTo.scrollIntoView({behavior: 'smooth'});
