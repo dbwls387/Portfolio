@@ -155,19 +155,19 @@ p {
 }
 
 .home__avatar {
-  width: 270px;
-  height: 270px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: 3px solid var(--color-light-white);
 }
 
 .home__title {
-  color: var(--color-dark-grey);
+  color: var(--color-black);
 }
 
 .home__description {
   color: var(--color-dark-grey);
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
 }
 
 .home__contact {
