@@ -65,6 +65,13 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter == null){
     return;
   }
+
+  // 이전에 선택된 아이템에서 셀렉션을 없애고 새로 클릭된 곳에 넣어주기 
+  const active = document.querySelector('.category__btn.selected'); 
+  active.classList.remove('selected'); 
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected'); 
+
   //console.log(filter); 
   projectContainer.classList.add('anim-out'); 
   setTimeout(() => {
@@ -77,9 +84,7 @@ workBtnContainer.addEventListener('click', (e) => {
       }
     }); 
     projectContainer.classList.remove('anim-out'); 
-  }, 300);
-  
-  
+  }, 300);  
 }); 
 
 
