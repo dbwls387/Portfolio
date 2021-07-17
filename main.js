@@ -23,9 +23,16 @@ navbarMenu.addEventListener('click', (event) => {
   if(link == null){ // navbar의 빈 공간을 누를 경우 
     return; 
   }
-
+  navbarMenu.classList.remove('open'); 
   scrollIntoView(link);
 });
+
+// 화면이 작을 때 navbar toggle button 
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn'); 
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open'); 
+});
+
 
 // "contact me" 클릭 시 컨택트 미로 스크롤링 
 const homeContactBtn = document.querySelector('.home__contact');
