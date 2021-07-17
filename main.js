@@ -41,6 +41,22 @@ document.addEventListener('scroll', () => {
   
 });
 
+// 스크롤을 내렸을 때 arrow-up 버튼 나타내기 
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight /2) {
+    arrowUp.classList.add('visible'); 
+  } else {
+    arrowUp.classList.remove('visible'); 
+  }
+});
+
+// "arrow-up" 버튼 클릭했을 때 
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector); 
   scrollTo.scrollIntoView({behavior: 'smooth'});
