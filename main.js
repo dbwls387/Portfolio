@@ -31,10 +31,9 @@ navbarMenu.addEventListener('click', (event) => {
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn'); 
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open'); 
-});
+})
 
-
-// "contact me" 클릭 시 컨택트 미로 스크롤링 
+// "contact me" 클릭 시 '컨택트 미'로 스크롤링 
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');

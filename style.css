@@ -199,6 +199,8 @@ p {
 .section__container {
   max-width: 1200px;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* About */
@@ -371,8 +373,9 @@ p {
   align-items: center;
   width: 280px;
   height: 250px;
-  margin: 2px;
+  margin: 8px;
   background-color: var(--color-light-white);
+  border-radius: 10%;
 }
 
 .project.invisible {
@@ -394,6 +397,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  border-radius: 10%;
   background-color: black;
   opacity: 0;
   transform: translateY(10px);
